@@ -1,0 +1,28 @@
+<!--
+ * @Description: 自定义导航栏
+ * @Version: 1.0
+ * @Autor: lupeng
+-->
+<view>
+  <view class="nav_bar_box">
+    <view class="nav_bar_content">
+      <view class="nav_bar_left">
+        <slot name="left">
+          <image class="nav_bar_left_icon" a:if="{{ leftIconShow }}" mode="scaleToFill" src="{{leftIcon}}" onTap="leftTap" />
+          <view a:if="{{ leftText.length>0 }}">{{leftText}}</view>
+        </slot>
+      </view>
+      <view class="nav_bar_center">
+        <slot name="center">
+          <view>{{title}}</view>
+        </slot>
+      </view>
+     <view class="nav_bar_right">
+      <slot name="right">
+        <image class="nav_bar_right_icon" a:if="{{ rightIconShow }}" mode="aspectFit" src="{{rightIcon}}" onTap="rightTap" />
+        <view a:if="{{ rightText.length>0 }}">{{rightText}}</view>
+      </slot> 
+     </view>
+    </view>
+  </view>
+</view>

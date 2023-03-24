@@ -1,0 +1,6 @@
+{
+    "main_url": {
+        "sit": "https://hrqywxcs.hrsec.com.cn/biscreen",
+        "prod": "https://wxxd.hrsec.com.cn:6688/biscreen"
+    }
+}

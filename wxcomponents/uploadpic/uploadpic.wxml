@@ -1,0 +1,25 @@
+<!--components/uploadpic/uploadpic.wxml-->
+<view class="pic-array" hidden="{{blankImg}}">
+  <view class="item-pic" wx:for="{{files}}">
+    <image src="{{item.url}}" class="pic" bindtap="ylClick" data-index="{{index}}"></image>
+    <image src="/assets/error.png" class="icon" bindtap="deletePic" data-index="{{item}}"></image>
+  </view>
+  <view class="item-pic" hidden="{{uploadHidden}}">
+    <image src="/assets/snapshot.png" class="pic" bindtap="uploadPic"></image>
+  </view>
+</view>
+<view hidden="{{swiperHidden}}" class="my-swiper">
+  <swiper
+    class="demo-swiper"
+    indicator-dots="{{true}}"
+    autoplay="{{false}}"
+    vertical="{{false}}"
+    circular="{{false}}"
+    current="{{current}}"
+  >
+    <swiper-item wx:key="{{index}}" wx:for="{{files}}" style="width: 100%;">
+        <image src="{{item.url}}" style="margin:0 auto" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view hidden="{{swiperHidden}}" class="my-mask" bindtap="hideyl"></view>

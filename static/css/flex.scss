@@ -1,0 +1,109 @@
+.flex {
+	display: flex;
+}
+
+.flexDirectionColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexAlignStart {
+	display: flex;
+	align-items: flex-start;
+}
+
+.flexAlignCenter {
+	display: flex;
+	align-items: center;
+}
+
+.flexJustifyCenter {
+	display: flex;
+	justify-content: center;
+}
+.flexJustifyStart {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flexBetween {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flexAround {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flexWrap {
+	flex-wrap: wrap;
+}
+
+.flexShrink0 {
+	flex-shrink: 0;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexJustifyBetween {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexJustifyEnd {
+	display: flex;
+	justify-content: flex-end;
+}
+.flexAlignEnd {
+	display: flex;
+	align-items: flex-end;
+}
+
+// ios底部安全距离-padding
+.savepadding {
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
+	box-sizing: content-box;
+}
+
+// ios底部安全距离-bottom
+.savebottom {
+	bottom: constant(safe-area-inset-bottom);
+	bottom: env(safe-area-inset-bottom);
+}
+
+// button默认边框
+button::after {
+	border: none;
+}
+
+// 超出两行省略
+.lineClamp {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; /*行数*/
+}
+
+// 超出3行省略
+.lineClamp3 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3; /*行数*/
+}

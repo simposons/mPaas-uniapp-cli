@@ -1,0 +1,65 @@
+{
+	"uni-app": {
+		"scripts": {
+			"weixin-dev": {
+				"title": "微信小程序-DEV",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin"
+				},
+				"define": {
+					"DEV": true
+				}
+			},
+			"weixin-prod": {
+				"title": "微信小程序-PROD",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin"
+				},
+				"define": {
+					"PROD": true
+				}
+			},
+			"mPaaS-dev": {
+				"title": "mPaaS小程序-DEV",
+				"env": {
+					"UNI_PLATFORM": "mp-alipay"
+				},
+				"define": {
+					"DEV": true
+				}
+			},
+			"mPaaS-prod": {
+				"title": "mPaaS小程序-PROD",
+				"env": {
+					"UNI_PLATFORM": "mp-alipay"
+				},
+				"define": {
+					"PROD": true
+				}
+			},
+			"h5-dev": {
+				"title": "h5-DEV",
+				"env": {
+					"UNI_PLATFORM": "h5"
+				},
+				"define": {
+					"DEV": true
+				}
+			},
+			"h5-prod": {
+				"title": "h5-PROD",
+				"env": {
+					"UNI_PLATFORM": "h5"
+				},
+				"define": {
+					"PROD": true
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"dayjs": "^1.10.7",
+		"js-md5": "^0.7.3",
+		"qrcode-base64": "^1.0.1"
+	}
+}

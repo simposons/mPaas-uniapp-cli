@@ -1,0 +1,47 @@
+/* components/uploadpic/uploadpic.wxss */
+.pic-array {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-pic {
+  position: relative;
+  margin: 0 10rpx 10rpx 0;
+}
+
+.item-pic .pic {
+  width: 160rpx;
+  height: 160rpx;
+  display: block;
+}
+
+.item-pic .icon {
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+.demo-swiper{
+  width: 100%;
+  height: 100% !important;
+  margin:0 auto;
+}
+.my-swiper{
+  height:44vh;
+  width:100vw;
+  position:fixed;
+  top:260rpx;
+  z-index: 11
+}
+.my-swiper image{
+  width: 100%;
+}
+.my-mask{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
